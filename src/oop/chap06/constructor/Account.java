@@ -1,0 +1,60 @@
+package oop.chap06.constructor;
+
+public class Account {
+	private String account;
+	private int balance;
+	private double interestRate;
+	
+	public Account() {
+		
+	}
+	
+	public Account(String account, int balance, double interestRate) {
+		this.account = account;
+		this.balance = balance;
+		this.interestRate = interestRate;
+	}
+	
+	
+	public String getAccount() {
+		return account;
+	}
+	public void setAccount(String account) {
+		this.account = account;
+	}
+	
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	
+	public double getInterestRate() {
+		return interestRate;
+	}
+	public void setInterestRate(double interestRate) {
+		this.interestRate = interestRate;
+	}
+	
+	public double calculateInterest() {
+		/*double calInter = 0.0;
+		calInter = (this.balance * interestRate)/100.0;
+		return calInter;*/
+		
+		return balance*interestRate/100;
+	}
+	
+	public void deposit(int dep) {
+		this.balance =balance + dep;
+	}
+	
+	public void withdraw(int wit) {
+		this.balance = balance - wit;
+	}
+
+	public void print() {
+		System.out.println("∞Ë¡¬¡§∫∏:"+getAccount()+"\t«ˆ¿Á¿‹æ◊:"+getBalance());
+	}
+	
+}
