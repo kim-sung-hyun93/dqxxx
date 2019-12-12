@@ -1,6 +1,6 @@
 package oop.chap06.constructor;
 
-public class Test06 {
+public class StudentTest {
 	public static void main(String[] args) {
 		
 		Student student1 = new Student("Kim", 100, 90, 95, 89);
